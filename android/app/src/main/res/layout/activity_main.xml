@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mirror Remote" android:textSize="26sp" android:textStyle="bold" />
+    <TextView android:id="@+id/statusText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Starting…" android:paddingTop="6dp" android:paddingBottom="12dp" />
+    <TextView android:id="@+id/deviceIdText" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="20sp" android:textStyle="bold" />
+    <TextView android:id="@+id/pinText" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="18sp" android:paddingBottom="10dp" />
+    <Button android:id="@+id/accessibilityButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Enable Remote Touch Permission" />
+    <EditText android:id="@+id/targetId" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="9-digit Device ID" android:inputType="number" android:maxLength="9" />
+    <EditText android:id="@+id/targetPin" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="6-digit PIN" android:inputType="numberPassword" android:maxLength="6" />
+    <Button android:id="@+id/connectButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Connect" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="10dp" android:background="#111111">
+        <ImageView android:id="@+id/remoteImage" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+    </FrameLayout>
+    <Button android:id="@+id/endButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="End Session" />
+</LinearLayout>

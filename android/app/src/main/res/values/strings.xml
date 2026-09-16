@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mirror Remote</string>
+    <string name="accessibility_description">Allows touch gestures only while you approve an active Mirror Remote session.</string>
+    <string name="relay_url">ws://10.0.2.2:8787</string>
+</resources>
